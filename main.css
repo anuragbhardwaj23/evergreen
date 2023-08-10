@@ -1,0 +1,208 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+.menu-bar{
+    display: none;
+    color: white;
+}
+#menu-barm{
+    display: none;
+}
+.menu-bar{
+    display: none;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    height:80px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #269afe;
+    font-size: 17px;
+    background: hsla(0,0%,100%,.08);
+    border: 0px solid hsla(0,0%,100%,.08);
+    margin-left: 2vw;
+    text-align: center;
+}
+
+.logo {
+    background-image: url('logo-removebg-preview.png');
+    background-size: contain;
+    background-color: #000;
+    background-repeat: no-repeat;
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    display: block;
+    padding-left: 90px;
+}
+.span {
+    color: blue;
+}
+ .image-container {
+    float:left;
+    padding: 20px;
+    width:40%;
+    margin-top: 10vh;
+
+}         
+.headname{
+    font-size: 46px;
+
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 120px;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f8b400;
+}
+.body_text{
+   color: white;
+}
+.heading{
+    color:aliceblue;
+}
+.main{
+    width: fit-content;
+    float: left;
+    margin-top: 100px ;
+    width:50%;
+    padding-left: 60px;
+}
+.button{
+    padding: auto;
+   
+    
+}
+.logoname{
+    color:  white;
+}
+.community{
+    display: inline-block;
+    padding: 18px 30px;
+    background-color: #248ce6;
+    color: white;
+    font-size: 16px;
+    border: royalblue;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.Community:hover {
+    background-color: #1f7de0;
+    transform: scale(1.05);
+}
+.token{
+    color: #269afe;
+}
+.buttonhome{
+    color: #269afe;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+.menu-bar{
+    display: initial;
+}
+
+
+    .navbar {
+        
+        height: auto;
+    }
+    .button {
+        width: 100%;
+        display: none;
+    }
+    
+    .menu-bar:checked ~ .button {
+        display: initial;
+    }
+    
+    
+
+    .nav-links {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .main {
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+
+    .image-container {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .headname {
+        font-size: 32px;
+    }
+
+}   
+.Community {
+        display: inline-block;
+    padding: 12px 24px;
+    background-color: #269afe;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.Community:hover {
+    background-color: #1f7de0;
+    transform: scale(1.05);
+}
+
