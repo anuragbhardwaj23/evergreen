@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -44,19 +44,35 @@ body {
     margin-left: 2vw;
     text-align: center;
 }
+#notification-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(54, 65, 152, 0.318);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
 
 .logo {
     background-image: url('logo-removebg-preview.png');
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
-    width: 80px; /* Adjust as needed */
-    height: 80px; /* Adjust as needed */
+    width: 80px; 
+    height: 80px; 
     display: block;
     padding-left: 90px;
 }
 .span {
     color: blue;
+}
+.copy-button{
+    background-color: #1f7de0;
+    color:white;
+    border-radius: 10px;
+    
 }
  .image-container {
     float:left;
@@ -146,6 +162,7 @@ body {
 }
 
 
+
     .navbar {
         
         height: auto;
@@ -155,17 +172,31 @@ body {
         display: none;
     }
     
-    .menu-bar:checked ~ .button {
+    #menu-barm:checked ~ .button {
         display: initial;
     }
     
     
 
     .nav-links {
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
+        display: none; /* Hide the regular navigation links */
+        flex-direction: column; /* Arrange items vertically */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #000000; /* Set your desired background color */
+        width: 100%;
+        z-index: 1; /* Place the menu above other content */
     }
+
+    .nav-links.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .nav-btn {
+        display: block; /* Show the Connect Wallet button */
+    }
+
 
     .nav-links li {
         margin: 5px 0;
