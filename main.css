@@ -169,7 +169,7 @@ body {
     }
     .button {
         width: 100%;
-        display: none;
+        
     }
     
     #menu-barm:checked ~ .button {
@@ -179,24 +179,10 @@ body {
     
 
     .nav-links {
-        display: none; /* Hide the regular navigation links */
-        flex-direction: column; /* Arrange items vertically */
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background-color: #000000; /* Set your desired background color */
-        width: 100%;
-        z-index: 1; /* Place the menu above other content */
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .nav-links.active {
-        display: flex; /* Show the menu when active */
-    }
-
-    .nav-btn {
-        display: block; /* Show the Connect Wallet button */
-    }
-
 
     .nav-links li {
         margin: 5px 0;
